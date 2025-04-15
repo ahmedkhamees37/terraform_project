@@ -1,3 +1,6 @@
+![ChatGPT Image Apr 15, 2025, 07_29_18 PM](https://github.com/user-attachments/assets/7e7fb0d4-edae-4c04-a080-bcefae73c05d)
+
+
 # 🌩️ AWS Infrastructure Deployment with Terraform 
 
 Welcome to my project, where I designed and deployed a **high-availability cloud infrastructure** within a single AWS region across two Availability Zones using **Terraform** and **Jenkins**. This setup ensures **scalability**, **reliability**, and **automated deployments**.
@@ -70,12 +73,26 @@ This project includes:
 
 ### 1. Clone the Repository
 
-```bash
+```sh
 git clone https://github.com/ahmedkhamees37/terraform_project.git
 cd terraform_project
-
+```
 ### 2. Initialize Terraform
-bash
-Copy
-Edit
+```sh
 terraform init
+```
+### 3. Select Workspace
+```sh
+terraform workspace select dev
+```
+
+### 4. Apply Configuration
+```sh
+terraform apply -var-file="dev.tfvars"
+```
+## 🤝 Contributing
+Contributions are welcome!
+Feel free to fork the repository and submit a pull request for any enhancements or bug fixes.
+
+## 📄 License
+This project is licensed under the MIT License.
